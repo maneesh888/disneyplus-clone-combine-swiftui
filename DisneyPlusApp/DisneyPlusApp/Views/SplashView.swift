@@ -14,7 +14,7 @@ struct SplashView: View {
             Color.black
             VStack {
                 if isActive {
-                    ContentView()
+                    ContentView(tabViewRouter: TabViewRouter())
                 }else{
                     SplashAnimationView().frame(width: 300,height: 300)
                 }

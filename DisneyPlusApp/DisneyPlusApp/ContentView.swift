@@ -8,19 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var tabViewRouter: TabViewRouter
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        GeometryReader { geo in
+            VStack(spacing: -10) {
+                getTabPages()
+                getTabIcon(geo: geo)
+            }
+            
         }
-        .padding()
+    }
+    
+    private func getTabPages() -> some View {
+        switch tabViewRouter.currentPage {
+            
+        case .home:
+            return AnyView(HomeView().frame(width: UIScreen.main.bounds.width))
+        case .search:
+            return AnyView(SearchView())
+        case .downloads:
+            return AnyView(DownloadView())
+        case .profile:
+            return AnyView(ProfileView())
+        }
+    }
+    
+    private func getTabIcon(geo: GeometryProxy) -> some View {
+        let width = geo.size.width / 4
+        let height = geo.size.height / 56
+        
+        return HStack {
+            TabBarIcon(tabViewRouter: tabViewRouter, currentPage: .home, width: width, height: height, systemIconName: "house", tabName: "Home")
+            TabBarIcon(tabViewRouter: tabViewRouter, currentPage: .search, width: width, height: height, systemIconName: "magnifyingglass", tabName: "Search")
+            TabBarIcon(tabViewRouter: tabViewRouter, currentPage: .downloads, width: width, height: height, systemIconName: "square.and.arrow.down.fill", tabName: "Downloads")
+            TabBarIcon(tabViewRouter: tabViewRouter, currentPage: .profile, width: width, height: height, systemIconName: "person.circle", tabName: "Profiles")
+        }
+        .frame(width: geo.size.width, height: 60)
+        .padding(.bottom,20)
+        .background(Color.black)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView(tabViewRouter: TabViewRouter())
+//    }
+//}
