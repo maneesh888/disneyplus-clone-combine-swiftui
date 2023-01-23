@@ -15,6 +15,7 @@
 		9F9DCFFD297ED7D3003E4A2D /* DisneyPlusAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9DCFFC297ED7D3003E4A2D /* DisneyPlusAppUITests.swift */; };
 		9F9DCFFF297ED7D3003E4A2D /* DisneyPlusAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9DCFFE297ED7D3003E4A2D /* DisneyPlusAppUITestsLaunchTests.swift */; };
 		9F9DD013297EDA28003E4A2D /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = 9F9DD012297EDA28003E4A2D /* SwiftyGif */; };
+		9F9DD015297EDAE7003E4A2D /* disneyPlusAnimated.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9F9DD014297EDAE7003E4A2D /* disneyPlusAnimated.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		9F9DCFF8297ED7D3003E4A2D /* DisneyPlusAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisneyPlusAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9DCFFC297ED7D3003E4A2D /* DisneyPlusAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyPlusAppUITests.swift; sourceTree = "<group>"; };
 		9F9DCFFE297ED7D3003E4A2D /* DisneyPlusAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyPlusAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F9DD014297EDAE7003E4A2D /* disneyPlusAnimated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = disneyPlusAnimated.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		9F9DD00B297ED7DD003E4A2D /* GIF */ = {
 			isa = PBXGroup;
 			children = (
+				9F9DD014297EDAE7003E4A2D /* disneyPlusAnimated.gif */,
 			);
 			path = GIF;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F9DD015297EDAE7003E4A2D /* disneyPlusAnimated.gif in Resources */,
 				9F9DCFE9297ED7D2003E4A2D /* Preview Assets.xcassets in Resources */,
 				9F9DCFE5297ED7D2003E4A2D /* Assets.xcassets in Resources */,
 			);
