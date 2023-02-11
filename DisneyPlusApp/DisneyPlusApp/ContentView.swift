@@ -47,12 +47,12 @@ struct ContentView: View {
         }
         .frame(width: geo.size.width, height: 60)
         .padding(.bottom,20)
-        .background(Color.black)
+        .background(ColorContant.darkBluishGrayColor.shadow(radius: 2))
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView(tabViewRouter: TabViewRouter())
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView(tabViewRouter: TabViewRouter())
+    }
+}
