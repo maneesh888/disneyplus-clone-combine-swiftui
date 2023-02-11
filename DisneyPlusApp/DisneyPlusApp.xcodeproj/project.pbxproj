@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F44767C29976A100066C07C /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F44767B29976A100066C07C /* ColorConstants.swift */; };
 		9F9DCFE1297ED7D0003E4A2D /* DisneyPlusAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9DCFE0297ED7D0003E4A2D /* DisneyPlusAppApp.swift */; };
 		9F9DCFE3297ED7D0003E4A2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9DCFE2297ED7D0003E4A2D /* ContentView.swift */; };
 		9F9DCFE5297ED7D2003E4A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9DCFE4297ED7D2003E4A2D /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F44767B29976A100066C07C /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		9F9DCFDD297ED7D0003E4A2D /* DisneyPlusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisneyPlusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9DCFE0297ED7D0003E4A2D /* DisneyPlusAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyPlusAppApp.swift; sourceTree = "<group>"; };
 		9F9DCFE2297ED7D0003E4A2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		9F9DD00D297ED825003E4A2D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9F44767B29976A100066C07C /* ColorConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				9F9DD01D297EE375003E4A2D /* TabBarIcon.swift in Sources */,
 				9F9DD025297EE682003E4A2D /* ProfileView.swift in Sources */,
 				9F9DD01F297EE638003E4A2D /* HomeView.swift in Sources */,
+				9F44767C29976A100066C07C /* ColorConstants.swift in Sources */,
 				9F9DCFE3297ED7D0003E4A2D /* ContentView.swift in Sources */,
 				9F9DD019297EDCDB003E4A2D /* SplashView.swift in Sources */,
 				9F9DD021297EE651003E4A2D /* SearchView.swift in Sources */,
